@@ -1,0 +1,363 @@
+.contact {
+  background-color: $contact-bg-color;
+
+  &__heading {
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    border-bottom: 2px solid $contact-btn-color;
+    width: 11%;
+    text-align: center;
+    margin-left: 13rem;
+
+    @include respond(tab-land) {
+      width: 16%;
+    }
+
+    @include respond(tab-port) {
+      width: 20%;
+      margin-left: 44rem;
+    }
+
+    @include respond(phone) {
+      width: 30%;
+      margin-left: 25rem;
+    }
+
+    @include respond(midPhone) {
+      width: 50%;
+      margin-left: 12rem;
+    }
+
+    @include respond(smallPhone) {
+      width: 50%;
+      margin-left: 10rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+    @include respond(midPhone) {
+      flex-direction: column;
+    }
+
+    &__profile {
+      margin-left: 14.5rem;
+
+      @include respond(tab-port) {
+        margin-left: 27.5rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 12rem;
+      }
+
+      @include respond(midPhone) {
+        margin-left: 12rem;
+      }
+
+      @include respond(smallPhone) {
+        margin-left: 9.5rem;
+      }
+    }
+
+    &__details {
+      margin-left: 4rem;
+      margin-top: 1.5rem;
+
+      @include respond(midPhone) {
+        margin-left: 10rem;
+      }
+
+      @include respond(smallPhone) {
+        margin-left: 8rem;
+      }
+    }
+
+    &--img {
+      width: 121px;
+      height: 110.16px;
+      border-radius: 50%;
+      border: 0.5px solid $contact-team-head;
+
+      @include respond(midPhone) {
+        margin-left: 1rem;
+      }
+    }
+
+    &--name {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: #ffffff;
+      text-align: center;
+
+      @include respond(midPhone) {
+        width: 60%;
+      }
+    }
+
+    &--head {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: $contact-team-head;
+      text-align: center;
+      border-bottom: 2px solid $contact-team-head;
+      margin-bottom: 0.7rem;
+
+      @include respond(midPhone) {
+        width: 70%;
+      }
+    }
+
+    &--email {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+
+      & > i {
+        margin-left: -2rem;
+        margin-right: 1rem;
+      }
+
+      text-align: center;
+      color: #f5f7fa;
+
+      @include respond(midPhone) {
+        width: 70%;
+      }
+    }
+
+    &--number {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      text-align: center;
+      line-height: 23px;
+
+      color: #f5f7fa;
+
+      & > i {
+        margin-left: -1.5rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+      }
+
+      @include respond(midPhone) {
+        width: 70%;
+      }
+    }
+  }
+
+  &__right {
+    height: 50.4rem;
+    width: 76.3rem;
+    margin: 2rem 0;
+    border-radius: 20px;
+
+    background: #3e4659;
+    border-radius: 20px;
+
+    &--heading {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 51px;
+      color: $contact-team-head;
+      margin: 2rem;
+      margin-left: 4rem;
+
+      @include respond(tab-port) {
+        margin-left: 4rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 4rem;
+      }
+    }
+
+    &--form {
+      margin: 2rem;
+      margin-left: 4rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--name {
+      font-size: 2rem;
+      border: 1px solid $contact-team-head;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      height: 6rem;
+      width: 32rem;
+      border-radius: 5px;
+      padding: 0.5rem;
+
+      @include respond(tab-port) {
+        margin-left: 2rem;
+        width: 40.5rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 0;
+        width: 50rem;
+      }
+
+      @include respond(midPhone) {
+        font-size: 1.3rem;
+        height: 45px;
+        width: 32rem;
+      }
+
+      @include respond(smallPhone) {
+        width: 28rem;
+      }
+    }
+
+    &--email {
+      font-size: 2rem;
+
+      height: 6rem;
+      width: 32rem;
+      border-radius: 5px;
+      border: 1px solid $contact-team-head;
+      box-sizing: border-box;
+      border-radius: 5px;
+
+      margin-bottom: 2rem;
+      margin-left: 0.8rem;
+      padding: 0.5rem;
+
+      @include respond(tab-port) {
+        width: 40.5rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 0;
+        width: 50rem;
+      }
+
+      @include respond(midPhone) {
+        font-size: 1.3rem;
+        height: 45px;
+        width: 32rem;
+      }
+
+      @include respond(smallPhone) {
+        width: 28rem;
+      }
+    }
+
+    &--message {
+      font-size: 2rem;
+
+      height: 19rem;
+      width: 65rem;
+      border-radius: 5px;
+      border: 1px solid $contact-team-head;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 0.5rem;
+
+      @include respond(tab-land) {
+        width: 59rem;
+      }
+
+      @include respond(tab-port) {
+        margin-left: 2rem;
+        width: 82rem;
+      }
+
+      @include respond(phone) {
+        margin-left: 0;
+        width: 50rem;
+        height: 15rem;
+      }
+
+      @include respond(midPhone) {
+        font-size: 1.3rem;
+        height: 15rem;
+        width: 32rem;
+      }
+
+      @include respond(smallPhone) {
+        width: 28rem;
+      }
+    }
+    &--btn {
+      width: 15.7rem;
+      height: 5.4rem;
+      background: $contact-btn-color;
+      border-radius: 10rem;
+      border: none;
+      margin-top: 2rem;
+      position: absolute;
+      left: 128rem;
+      top: 54rem;
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 2.1rem;
+      text-align: center;
+
+      color: #ffffff;
+
+      @include respond(tab-land) {
+        left: 113rem;
+        top: 55rem;
+      }
+
+      @include respond(tab-port) {
+        left: 80rem;
+        top: 121rem;
+      }
+
+      @include respond(phone) {
+        left: 43rem;
+        top: 120rem;
+      }
+
+      @include respond(midPhone) {
+        left: 15rem;
+        top: 155rem;
+      }
+
+      @include respond(smallPhone) {
+        left: 12rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.team {
+  background-color: $team-bg-color;
+  height: 100vh;
+  position: relative;
+
+  &__heading {
+    color: #fff;
+    position: absolute;
+    left: 672px;
+    top: 50px;
+    & > h1 {
+      border-bottom: 3px solid #f9a602;
+    }
+  }
+}
