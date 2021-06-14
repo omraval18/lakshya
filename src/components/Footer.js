@@ -102,10 +102,7 @@ function Footer() {
               </Link>
             </li>
             <li className="footer__social--li">
-              <Link
-                to="/"
-                className="footer__social--link"
-              >
+              <Link to="/" className="footer__social--link">
                 <i class="fab fa-instagram"></i>
               </Link>
             </li>

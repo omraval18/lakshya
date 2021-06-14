@@ -83,7 +83,6 @@
       width: 9rem;
       margin-left: 4.8rem;
     }
-
   }
 
   &__heading {
@@ -254,7 +253,7 @@
       }
 
       @include respond(smallPhone) {
-        margin-left:1rem;
+        margin-left: 1rem;
       }
     }
 
